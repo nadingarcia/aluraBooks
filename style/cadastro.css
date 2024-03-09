@@ -1,0 +1,71 @@
+.cadastro {
+    width: 100%;
+    background-color: var(--cor-cabecalho);
+}
+
+.email {
+    margin: 1.7rem 0 2.2rem 0;
+    width: 90%;
+    padding: 0.8rem 0;
+    border: solid 1px rgba(0, 47, 82, 1);
+    border-radius: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    background-color: transparent;
+    color: var(--cor-cabecalho);
+}
+
+.email::placeholder {
+    background: url(../assets/Email.svg) no-repeat;
+    background-position: calc(15%);
+    text-align: center;
+}
+
+.h2-cadastro {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: var(--texto-menu);
+    padding-top: 1.5rem;
+}
+
+.p-cadastro {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    color: var(--texto-menu);
+    padding-top: 0.5rem;
+    text-align: left;
+}
+
+.cadastro-items {
+    margin: 0 1.5rem;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .cadastro-items {
+        display: flex;
+    }
+
+    .cadastro-items {
+        margin: 0;
+        padding: 2rem 9.31rem;
+    }
+
+    .email {
+        width: 50%;
+    }
+
+    .cadastro-items-esquerda{
+        margin-right: 1.5%;
+        width: 45%;
+    }
+
+    .h2-cadastro {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}

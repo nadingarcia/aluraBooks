@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url(/style/banner.css);
+@import url(/style/carrossel.css);
+@import url(/style/card.css);
+@import url(/style/topico.css);
+@import url(/style/cadastro.css);
+@import url(/style/rodape.css);
+
+:root {
+    --cor-de-fundo: rgba(235, 236, 238, 1);
+    --cor-cabecalho: rgba(255, 255, 255, 1);
+    --cor-titulo-menu: rgba(235, 155, 0, 1);
+    --texto-menu: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 1.5rem;
+    background-color: var(--cor-cabecalho);
+    position: relative;
+}
+
+.cabecalho-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cabecalho-direita {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.categorias {
+    background-color: var(--cor-cabecalho);
+    width: 60%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 0 4% 0;
+}
+
+.titulo-menu {
+    color: var(--cor-titulo-menu);
+    padding: 5% 0 0 13%;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.texto-menu {
+    padding: 15% 0 0 13%;
+}
+
+.texto-menu-texto {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--texto-menu);
+    font-size: 1rem;
+}
+
+
+.titulo-cabecalho {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.menu-ativo {
+    width: 70%;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .titulo-cabecalho {
+        display: block;
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 1.88rem;
+    }
+ 
+
+    .negrito-titulo-cabecalho {
+        font-family: var(--fonte-secundaria);
+        font-weight: 700;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    
+    .opcoes {
+        display: block;
+        display: flex;
+    }
+
+    .opcoes-lista {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: black;
+        margin-right: 2.8em;
+    }
+
+    .oculto {
+        display: none;
+    }
+
+    .cabecalho-direita {
+        margin-right: 5rem;
+    }
+
+    .cabecalho-esquerda {
+        margin-left: 3rem;
+    }
+
+    .cabecalho {
+        align-items: center;
+    }
+
+    .opcoes {
+        position: absolute;
+        left: 40%;
+    }
+
+    .opcoes-lista:hover {
+        background: var(--texto-menu);
+        color: var(--cor-cabecalho);
+        cursor: cell;
+    }
+
+    .categorias {
+        background-color: var(--cor-cabecalho);
+        width: 20%;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 0 4% 0;
+    }
+
+    .ancoraCabecalho {
+        display: none;
+    }
+
+    .texto-menu-texto:hover {
+        background: var(--texto-menu);
+        color: var(--cor-cabecalho);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .opcoes {
+        position: absolute;
+        left: 20%;
+    }
+
+    .categorias {
+        background-color: var(--cor-cabecalho);
+        width: 10%;
+        position: absolute;
+        top: 100%;
+        left: 22%;
+        transform: translateX(-22%);
+        padding: 0 0 1% 0;
+    }
+
+    .ancoraCabecalho{
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+}

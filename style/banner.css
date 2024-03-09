@@ -1,0 +1,65 @@
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--texto-menu);
+}
+
+.texto-comeco {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.13rem;
+    padding: 2.2rem 0 0.8rem 0;
+    text-align: center;
+    color: var(--cor-cabecalho);
+}
+
+.pBanner {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-cabecalho);
+}
+
+.input-banner {
+    margin: 1.7rem 0 2.2rem 0;
+    width: 90%;
+    padding: 0.8rem 0;
+    border: 1px white solid;
+    border-radius: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    background-color: transparent;
+    color: var(--cor-cabecalho);
+}
+
+input::placeholder {
+    background: url(../assets/Lupa.svg) no-repeat;
+    background-position: calc(10%);
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .texto-comeco {
+        font-size: 2.25rem;
+        margin-top: 5rem;
+    }
+
+    .input-banner {
+        width: 40%;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .input-banner {
+        width: 30%; 
+    }
+
+    input::placeholder {
+        background-position: calc(20%);
+    }
+}
